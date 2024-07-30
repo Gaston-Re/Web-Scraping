@@ -13,7 +13,7 @@ Extrae información sobre el nombre del juego, las categorías, la fecha de lanz
 el total de reseñas, el precio y el enlace de cada uno de estos juegos.
 '''
 
-path = 'C:\\seleniumdriver\\chromedriver.exe'
+path = 'C:\\ruta_archivo\\chromedriver.exe'
 service = Service(executable_path=path)
 driver = webdriver.Chrome(service=service,)
 
