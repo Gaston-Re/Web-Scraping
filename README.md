@@ -20,7 +20,7 @@ data
 </p>
 
 
-<h1 align="center">explicacion de scrips</h1>
+<h1 align="center">explicacion de scripts</h1>
 <p align="justify"> 
 Nuestro cliente es un emprendedor que lidera la cadena de restaurantes "Pizza Hut", presente en diversos estados de Estados Unidos. Nuestra misión es potenciar la visibilidad y el impacto de su negocio, tanto entre los comensales que disfrutan de su experiencia in situ como entre aquellos que toman decisiones basadas en las reseñas que descubren en la plataforma Yelp. Este enfoque se concentrará especialmente en las sucursales ubicadas en las ciudades de California, Florida y Nueva York.
 
