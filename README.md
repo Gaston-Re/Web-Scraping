@@ -22,15 +22,25 @@ Bienvenido a este repositorio de proyectos de web scraping, donde encontrarás h
 
 <h1 align="center">Estructura del Repositorio</h1>
 <p align="justify"> 
+  
   - Scripts/: Contiene scripts y utilidades para realizar scraping de ofertas de empleo en LinkedIn.
+    
       -linkedin.py
+    
       -steam_juegos_cat.py
+    
       -steam_top_jegos.py
+    
   - csv/: Datos extraídos en formatos estructurados CSV.
+    
       -cat juegos steam.csv
+    
       -job_details.csv
+    
       -links_usa.csv
+    
       -top juegos.csv
+    
   - scv/:  Imagenes asociadas al readme.
 
 <h1 align="center">linkedin</h1>
