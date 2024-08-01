@@ -25,43 +25,63 @@ Bienvenido a este repositorio de proyectos de web scraping, donde encontrarás h
   
   - Scripts/: Contiene scripts y utilidades para realizar scraping de ofertas de empleo en LinkedIn.
     
-      -linkedin.py
+      -linkedin.py :Script puestos laborales en linkedin.
     
-      -steam_juegos_cat.py
+      -steam_juegos_cat.py :Script de lista de juegos por categoria.
     
-      -steam_top_jegos.py
+      -steam_top_jegos.py :Script de steam con top juegos por jugadores actuales con pico diario.
     
   - csv/: Datos extraídos en formatos estructurados CSV.
     
-      -cat juegos steam.csv
+      -cat juegos steam.csv :datasets juegos por cateogria
     
-      -job_details.csv
+      -job_details.csv :datasets detalles de puestos en linekedin
     
-      -links_usa.csv
+      -links_usa.csv :datasets links de puestos en linkedin
     
-      -top juegos.csv
+      -top juegos.csv :datasets top juegos por jugadores activos
     
   - scv/:  Imagenes asociadas al readme.
 
 <h1 align="center">linkedin</h1>
 <p align="justify"> 
-  <p align="center">
-    <img src="src/busqueda_linkedin.jpg" alt="busqueda" width="300">
-  </p>
-  - Análisis de reseñas en plataformas
+  El proceso de este script se divide en dos partes:
+    
+  -Primera Parte:
+    Inicia logueando en la página de LinkedIn. Luego de este paso, se dirige a la URL de trabajos. En la misma, busca los elementos para insertar el puesto y la ubicación predefinida en el archivo. Realiza     la búsqueda y comienza un ciclo while con la condición true, el cual ejecuta principalmente la función que extraerá los enlaces de las postulaciones. Antes de esto, comienza a scrollear hacia abajo         para cargar todos los puestos sin inconvenientes. Luego, extrae los links y ejecuta la funcion para el cambio de página que retorna true. Si no se encuentra el botón para pasar a la siguiente página,       retorna false. Estos enlaces extraídos se guardan en una lista, la cual se usará luego para crear un DataFrame y exportar el archivo.
+    <p align="center">
+      <img src="src/busqueda_linkedin.jpg" alt="busqueda" width="300">
+    </p>
 
- - Seguimiento de indicadores clave de desempeño (KPI's)
-
- - Evaluación y recomendaciones estratégicas
-
- - Informe detallado de resultados
-*`encontraremos este proceso en el archivo EDA.ipynb`*
+  -Segunda Parte:
+    Carga el archivo guardado en la primera parte. Crea una lista en la cual se guardarán diccionarios e inicia un ciclo for que devolverá los enlaces del DataFrame. Si este enlace no es nulo, se ejecuta       una función de extracción de información, la cual está compuesta por varias sentencias try. La primera realiza clic en el elemento de "ver más" para extraer correctamente la información de la               descripción. Luego, cada sentencia try siguiente está definida para extraer un elemento, como el nombre del puesto, la ubicación, el tipo de empleo, etc. Estas sentencias try individuales evitan que la     falta de un elemento impida extraer la información de los demás. Al concluir la función, se retorna un diccionario que se guarda en la lista mencionada anteriormente. Esta lista se convierte en un          DataFrame y se exporta en formato CSV.
+    <p align="center">
+      <img src="src/detalles_linkedin.jpg" alt="busqueda" width="300">
+    </p>
+    <p align="center">
+      <img src="src/acerca_linkedin.jpg" alt="busqueda" width="300">
+    </p>
+    <p align="center">
+      <img src="src/aptitudes_linkedin.jpg" alt="busqueda" width="300">
+    </p>
+    
+  -Optimizacion:
+    Una optimización recomendada es configurar el script para evitar la primera parte. Para esto, se debe configurar para que haga clic en cada postulación y extraiga la información en la ventana emergente     al lado de las postulaciones.
+    <p align="center">
+      <img src="src/extraccion_linkedin.jpg" alt="busqueda" width="300">
+    </p>
+    
+  *`encontraremos este proceso en el archivo Scripts/linkedin.py`*
 
 
 <h1 align="center">Steam</h1>
 <p align="justify"> 
+Esta seccion esta compuesta por dos Scripts
 
-*`encontraremos este proceso en el archivo EDA.ipynb`*
+-Primer Script:
+  Este realiza una extraccion de juegos por categoria:
+
+*`encontraremos este proceso en los archivos Scripts/steam_juegos_cat.py|Scripts/steam_top_juegos.py`*
 
 
 <h1 align="center">¿Cómo lo hicimos? 🤔</h1>
