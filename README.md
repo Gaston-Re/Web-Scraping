@@ -1,7 +1,7 @@
 <h1 align="center">WEB-SCRAPING </h1>
 
 <p align="center">
-  <img src="src/imagenwebscraping" alt="DataHunters" width="300">
+  <img src="src/imagenwebscraping" alt="webscraping" width="300">
 </p>
 
 
@@ -10,7 +10,7 @@
 <hr>
 
 <p align="center">
-  <img src="src/seleniumimagen" alt="Yelp" width="300">
+  <img src="src/seleniumimagen" alt="selenium" width="300">
 </p>
 
 <h1 align="center">Introducción</h1>
