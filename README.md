@@ -16,18 +16,28 @@
 <h1 align="center">Introducción</h1>
 
 <p align="justify"> 
-data
+Bienvenido a este repositorio de proyectos de web scraping, donde encontrarás herramientas diseñadas para extraer datos valiosos de dos populares plataformas: LinkedIn y Steam. Este repositorio contiene scripts y utilidades para realizar scraping de datos de puestos de trabajo publicados en LinkedIn y de información de juegos disponibles en Steam.
 </p>
 
 
-<h1 align="center">explicacion de scripts</h1>
+<h1 align="center">Estructura del Repositorio</h1>
 <p align="justify"> 
-Nuestro cliente es un emprendedor que lidera la cadena de restaurantes "Pizza Hut", presente en diversos estados de Estados Unidos. Nuestra misión es potenciar la visibilidad y el impacto de su negocio, tanto entre los comensales que disfrutan de su experiencia in situ como entre aquellos que toman decisiones basadas en las reseñas que descubren en la plataforma Yelp. Este enfoque se concentrará especialmente en las sucursales ubicadas en las ciudades de California, Florida y Nueva York.
-
+- Scripts/: Contiene scripts y utilidades para realizar scraping de ofertas de empleo en LinkedIn.
+    -linkedin.py
+    -steam_juegos_cat.py
+    -steam_top_jegos.py
+- csv/: Datos extraídos en formatos estructurados CSV.
+    -cat juegos steam.csv
+    -job_details.csv
+    -links_usa.csv
+    -top juegos.csv
+- scv/:  Imagenes asociadas al readme.
 
 <h1 align="center">linkedin</h1>
 <p align="justify"> 
-  
+  <p align="center">
+    <img src="src/busqueda_linkedin.jpg" alt="busqueda" width="300">
+  </p>
   - Análisis de reseñas en plataformas
 
  - Seguimiento de indicadores clave de desempeño (KPI's)
@@ -35,9 +45,13 @@ Nuestro cliente es un emprendedor que lidera la cadena de restaurantes "Pizza Hu
  - Evaluación y recomendaciones estratégicas
 
  - Informe detallado de resultados
+*`encontraremos este proceso en el archivo EDA.ipynb`*
+
 
 <h1 align="center">Steam</h1>
 <p align="justify"> 
+
+*`encontraremos este proceso en el archivo EDA.ipynb`*
 
 
 <h1 align="center">¿Cómo lo hicimos? 🤔</h1>
