@@ -113,9 +113,6 @@ Esta sección está compuesta por dos Scripts:
 
 5. Visualización y reportes con Power Bi.
 
-
-# Metodología de trabajo
-
 <h1 align="center">Stack Tecnológico 🔧</h1>
 <p align="justify"> 
 
