@@ -1,7 +1,7 @@
 <h1 align="center">WEB-SCRAPING </h1>
 
 <p align="center">
-  <img src="src/imagenwebscraping" alt="webscraping" width="300">
+  <img src="src/webscraping.png" alt="webscraping" width="300">
 </p>
 
 
@@ -10,7 +10,7 @@
 <hr>
 
 <p align="center">
-  <img src="src/seleniumimagen" alt="selenium" width="300">
+  <img src="src/slenium.png" alt="selenium" width="300">
 </p>
 
 <h1 align="center">Introducción</h1>
@@ -83,22 +83,45 @@ Bienvenido a este repositorio de proyectos de web scraping, donde encontrarás h
 Esta seccion esta compuesta por dos Scripts
 
 -Primer Script:
-  Este realiza una extraccion de juegos por categoria:
-
+  Este realiza una extraccion de juegos por categoria, para esto el usuario debe entrar a steam a travez de un navegador.
+  <p align="center">
+      <img src="src/Categorias.jpg" alt="Categorias" width="300">
+  </p>
+  Al seleccionar la categoria debera copiar la url y esta debera ser pegada en el script.
+  <p align="center">
+      <img src="src/url.jpg" alt="url" width="300">
+  </p>
+  Posteriormente se debera agregar una extencion a dicha url si el usuario desea cambiar la lista de los juegos proporcionados ordenado por los mas vendidos, los mejor          valorados, etc.
+  <p align="center">
+      <img src="src/extenciones.jpg" alt="extenciones" width="300">
+  </p>
+  <p align="center">
+      <img src="src/extenciones_tipo.jpg" alt="tipos" width="300">
+  </p>
+  Esto ofrecera al usuario extraer datos de la lista de juegos solicitada, como el nombre, categorias, fecha de lanzamiento, tipo de reseñas, cantidad de reseña, precio y       link del juego.
+  
+-Segundo Script:
+  Este extrae los datos de una lista proporcionada por steam sobre el top 100 juegos por jugadores activos, ofreciendo informacion del nombre, precio, jugadores actuales y      pico diario.
+  <p align="center">
+      <img src="src/top_juegos.jpg" alt="Top100" width="300">
+  </p>
+  
 *`encontraremos este proceso en los archivos Scripts/steam_juegos_cat.py|Scripts/steam_top_juegos.py`*
 
 
-<h1 align="center">¿Cómo lo hicimos? 🤔</h1>
+<h1 align="center">¿Cómo lo hice? 🤔</h1>
 
-1. Extracción y transformación de datos con Python usando las librerías Pandas y Numpy principalmente.
+1. eleccion de libreria de web scraping.
 
-2. Almacenamiento de datos limpios y estructurados con el servicio en la nube Google Cloud Storage
+2. Estudio de la extructura html de dichas paginas.
 
-3. Análisis de datos en la nube con BigQuery
+3. Creacion de Scripts.
 
-4. Modelo de Machine Learning
+- Futuros pasos
 
-5. Visualización y reportes con Power Bi
+4. Transformacion de datos.
+
+5. Visualización y reportes con Power Bi.
 
 
 # Metodología de trabajo
@@ -106,18 +129,8 @@ Esta seccion esta compuesta por dos Scripts
 <h1 align="center">Stack Tecnológico 🔧</h1>
 <p align="justify"> 
 
-🐍 **Python**: Lenguaje utilizado para realizar cálculos estadísticos, crear visualizaciones de datos, construir algoritmos de aprendizaje automático, manipular y analizar datos y completar tareas relacionadas con los datos.
+🐍 **Python**: Lenguaje utilizado para realizar Scripts.
 
-🐼 **Pandas**: Librería de Python Utilizada para la manipulación y análisis de datos estructurados.
-master
+🐼 **Pandas**: Librería de Python Utilizada para la creacion de DataFrame y exportacion/lectura de archivos.
 
-📈 **Matplotlib**: Librería de Python utilizada para la visualización de datos y generación de gráficos.  
-
-📘 **Visual Studio Code**: Editor de código fuente que permite el desarrollo de las instrucciones para la ejecución de todo el proyecto.
-
-💻 **Power BI**: Power BI es un servicio de análisis de datos de Microsoft orientado a proporcionar visualizaciones interactivas y capacidades de inteligencia empresarial con una interfaz simple.
-
-  ⚡**Hevo**: plataforma de canalización de datos sin mantenimiento que te ayuda a configurar canalizaciones de datos en minutos. Sincroniza automáticamente los datos de todas tus fuentes con el almacén, sin necesidad de mantenimiento.
-
-🔰**Bert**: Red neuronal de código abierto que ha sido entrenada para procesar el lenguaje natural.
-  </p>
+💻 **Selenium**: Librería de Python utilizada para la extraccion de infromacion.
